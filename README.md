@@ -13,16 +13,13 @@ listę numerów telefonów, którą następnie można pobrać w formacie CSV, lu
 - CSS
 
 4.Uruchomienie 
+- Wymagane jest zainstalowanie Ruby (w wersji zgodnej z .ruby-version) wraz z Bundlerem. Pozostałe zależności, w tym Ruby on Rails, zostaną zainstalowane automatycznie po wykonaniu bundle install
 - git clone https://github.com/TWOJ_LOGIN/CompanyContacts.git company-contacts
 - cd company-contacts
 - bundle install
 - rails db:prepare
-- rails db:seed
 - rails server
 - wpisać w przeglądarce: http://localhost:3000/contacts
-Konto administratora
-Login: admin@firma.pl
-Hasło: admin123
 
 
 5.funckjonalności
