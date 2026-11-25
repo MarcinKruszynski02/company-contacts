@@ -1,0 +1,48 @@
+
+<h1>Company Phone Book</h1>
+
+<% if authenticated? %>
+  <p>Zalogowano jako administrator</p>
+  <%= button_to "Wyloguj", session_path, method: :delete %>
+<% else %>
+  <%= link_to "Zaloguj jako admin", new_session_path %>
+<% end %>
+
+<hr>
+
+<%= link_to "Dodaj kontakt", new_contact_path %>
+
+<% if authenticated? %>
+  <div class="export-actions">
+
+    <%= link_to "Eksportuj kontakty (CSV)",
+        contacts_path(format: :csv),
+        class: "export-button" %>
+
+    <%= link_to "Eksportuj na telefon (VCF)",
+        contacts_path(format: :vcf),
+        class: "export-button vcf-button" %>
+
+  </div>
+<% end %>
+
+<h2>Lista kontaktów</h2>
+
+<% @contacts.each do |contact| %>
+  <div class="contact-row">
+    <span>
+      <%= contact.name %> -
+      <%= contact.phone %> -
+      <%= contact.category %>
+    </span>
+
+    <% if authenticated? %>
+      <%= button_to "Usuń",
+          contact_path(contact),
+          method: :delete,
+          data: {
+            turbo_confirm: "Na pewno usunąć kontakt?"
+          } %>
+    <% end %>
+  </div>
+<% end %>

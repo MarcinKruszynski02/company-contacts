@@ -1,0 +1,179 @@
+/*
+ * This is a manifest file that'll be compiled into application.css.
+ *
+ * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
+ * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
+ * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
+ * depending on specificity.
+ *
+ * Consider organizing styles into separate files for maintainability.
+ */
+body {
+  background-color: #f4f6f9;
+  font-family: Arial, sans-serif;
+  margin: 40px;
+}
+
+h1 {
+  color: #2563eb;
+  text-align: center;
+}
+
+.contact {
+  background-color: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #dddddd;
+}
+
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 12px 15px;
+  margin-bottom: 8px;
+
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.contact-row form {
+  margin: 0;
+}
+
+/* Formularz dodawania kontaktu */
+
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+}
+
+.contact-form-card {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 430px;
+  box-sizing: border-box;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form-card h1 {
+  font-size: 26px;
+  color: #222;
+  margin: 0 0 10px;
+}
+
+.form-description {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.submit-button {
+  width: 100%;
+  background: #2563eb;
+  color: white;
+  padding: 13px;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background: #1d4ed8;
+}
+
+.back-link {
+  display: block;
+  text-align: center;
+  margin-top: 18px;
+  text-decoration: none;
+  color: #2563eb;
+  font-size: 14px;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.form-errors {
+  color: #b91c1c;
+  background: #fef2f2;
+  border-radius: 7px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+
+.export-button {
+  display: inline-block;
+  
+}
+
+
+.export-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.export-button {
+  display: inline-block;
+  background: #16a34a;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.export-button:hover {
+  background: #15803d;
+}
+
+.vcf-button {
+  background: #2563eb;
+}
+
+.vcf-button:hover {
+  background: #1d4ed8;
+}
+
+

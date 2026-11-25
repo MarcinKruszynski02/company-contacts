@@ -1,0 +1,27 @@
+
+<h1>Logowanie administratora</h1>
+
+<%= form_with url: session_path do |form| %>
+
+  <div>
+    <%= form.email_field :email_address,
+        placeholder: "Adres e-mail",
+        required: true,
+        autofocus: true %>
+  </div>
+
+  <div>
+    <%= form.password_field :password,
+        placeholder: "Hasło",
+        required: true %>
+  </div>
+
+  <div style="display: flex; gap: 10px; margin-top: 10px; align-items: center;">
+
+    <%= form.submit "Zaloguj się" %>
+
+    <%= link_to "Powrót do strony głównej", root_path %>
+
+  </div>
+
+<% end %>
