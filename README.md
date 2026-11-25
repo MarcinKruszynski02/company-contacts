@@ -3,7 +3,7 @@ wyobraźmy sobię sytuację kiedy nowy pracownik musi skontaktować się z dzia�
 pojawią się problem, gdyż nie ma do nich numeru telefonu. Moja aplikacja rozwiązuje ten problem użytkownicy tworzą publiczną 
 listę numerów telefonów, którą następnie można pobrać w formacie CSV, lub w formacie VCF (dla telefonów) a następnie zaimportować kontakty, bardzo to ułatwia proces zapisywania wszystkich kontaktów dla nowych pracowników i nie tylko.
 <br>
-##2.Podgląd aplikacji
+2.Podgląd aplikacji
 ![CompanyContacts Demo](screenshots/Animation.gif)
 3.Technologie:
 - Ruby
@@ -13,7 +13,16 @@ listę numerów telefonów, którą następnie można pobrać w formacie CSV, lu
 - CSS
 
 4.Uruchomienie 
-
+- git clone https://github.com/TWOJ_LOGIN/CompanyContacts.git company-contacts
+- cd company-contacts
+- bundle install
+- rails db:prepare
+- rails db:seed
+- rails server
+- wpisać w przeglądarce: http://localhost:3000/contacts
+Konto administratora
+Login: admin@firma.pl
+Hasło: admin123
 
 
 5.funckjonalności
